@@ -1,9 +1,10 @@
-import { createServer } from "./server";
-import { log } from "@repo/logger";
+import { createAPI } from "@repo/backend";
+const main = async () => {
+  const api = await createAPI();
 
-const port = process.env.PORT || 3001;
-const server = createServer();
+  api.listen(4000, () => {
+    console.log(`api running on 4000`);
+  });
+};
 
-server.listen(port, () => {
-  log(`api running on ${port}`);
-});
+main();

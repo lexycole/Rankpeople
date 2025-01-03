@@ -1,0 +1,8 @@
+{
+    "$schema": "https://json.schemastore.org/nodemon.json",
+    "watch": ["../../**/dist/"],
+    "ignore": ["./dist"],
+    "ext": "js, ts, jsx, tsx",
+    "delay": 0.1,
+    "legacyWatch": true
+  }

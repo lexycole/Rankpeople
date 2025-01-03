@@ -1,0 +1,11 @@
+query GetPeopleOverview {
+  getPeopleOverview {
+    average
+    numberOfRatings
+    person {
+      id
+      title
+      lastName
+    }
+  }
+}

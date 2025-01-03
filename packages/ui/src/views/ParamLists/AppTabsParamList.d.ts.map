@@ -1,0 +1,1 @@
+{"version":3,"file":"AppTabsParamList.d.ts","sourceRoot":"","sources":["AppTabsParamList.ts"],"names":[],"mappings":"AAAA,MAAM,MAAM,gBAAgB,GAAG;IAE7B,IAAI,EAAE;QAAE,QAAQ,EAAE,MAAM,CAAA;KAAE,CAAC;IAC3B,QAAQ,EAAE,SAAS,CAAC;IACpB,QAAQ,EAAE,SAAS,CAAC;IACpB,KAAK,EAAE,SAAS,CAAC;CAClB,CAAC"}

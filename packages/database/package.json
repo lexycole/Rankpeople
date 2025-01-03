@@ -1,0 +1,27 @@
+{
+  "name": "@repo/database",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo && rm -rf dist && rm tsconfig.tsbuildinfo",
+    "build": "prisma generate && tsc -b", 
+    "dev": "tsc -b -w --preserveWatchOutput",
+    "lint": "eslint ./src/**/*.ts --fix",
+    "sync": "prisma db push --force-reset"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "@repo/environment": "*",
+    "@repo/logger": "*",
+    "@repo/profanity-filter": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "prisma": "^6.1.0",
+    "semantic-release": "^24.2.0",
+    "semantic-release-monorepo": "^8.0.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -4,8 +4,12 @@
     "lib": ["ES2015", "DOM"],
     "outDir": "./dist",
     "rootDir": "./src",
-    "types": ["jest", "node"]
+    "types": ["jest", "node"],
+    "composite": true,                
+    "declaration": true,              
+    "declarationMap": true,           
+    "sourceMap": true                 
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist", "**/__tests__/*"]  // Update exclude
 }

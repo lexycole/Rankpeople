@@ -1,0 +1,3 @@
+mutation CreateRating($RatingInput: RatingInput!) {
+  createRating(RatingInput: $RatingInput)
+}

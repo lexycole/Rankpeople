@@ -7,6 +7,9 @@
       "dependsOn": ["^build"],
       "env": ["NEXT_PUBLIC_API_HOST"]
     },
+    "@repo/ui#build": {
+      "dependsOn": ["api#build"]
+    },
     "test": {
       "outputs": ["coverage/**"],
       "dependsOn": []
@@ -19,6 +22,12 @@
       "persistent": true
     },
     "clean": {
+      "cache": false
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:push": {
       "cache": false
     }
   }

@@ -1,0 +1,16 @@
+query PersonRating($PersonID: Float!) {
+  getPersonRating(personId: $PersonID) {
+    value
+    feedback
+  }
+  getPersonAverageRating(personId: $PersonID)
+  getPersonFromID(personId: $PersonID) {
+    id
+    title
+    lastName
+  }
+  getMyPersonRating(personId: $PersonID) {
+    value
+    feedback
+  }
+}

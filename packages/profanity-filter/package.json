@@ -1,0 +1,25 @@
+{
+    "name": "@repo/profanity-filter",
+    "version": "0.0.0",
+    "private": true,
+    "license": "MIT",
+    "main": "./dist/index.js",
+    "scripts": {
+        "build": "tsc -b",
+        "clean": "rm -rf dist && rm -rf .turbo && rm tsconfig.tsbuildinfo",
+        "dev": "tsc -b -w --preserveWatchOutput",
+        "lint": "tsc --noEmit && eslint \"src/**/*.ts*\" --max-warnings 0",
+        "start": "node -r esbuild-register ./src/index.ts",
+        "test": "jest --detectOpenHandles"
+    },
+    "dependencies": {
+        "bad-words": "^4.0.0"
+    },
+    "devDependencies": {
+        "@types/bad-words": "^3.0.3",
+        "@types/jest": "^29.5.14",
+        "semantic-release": "^24.2.0",
+        "semantic-release-monorepo": "^8.0.2",
+        "typescript": "^5.7.2"
+    }
+}
